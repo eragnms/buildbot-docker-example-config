@@ -22,8 +22,6 @@ services:
     image: "postgres:9.4"
     expose:
         - 5432
-  volumes:
-    - www:/home/mats
 
   worker:
     image: "buildbot/buildbot-worker:master"
